@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tp05</title>
+</head>
+
+<body>
+  <h1> Tp05 Formulario</h1>
+  <h2>Brisa Riffo</h2>
+
+  <h3>1-¿Qué atributo se utiliza para especificar la URL a la que se enviarán los datos del formulario? a) method <u>b)
+      action </u>c) target d) url</h3>
+
+
+  <h3>2-¿Cuál es el atributo que se utiliza para especificar el tipo de datos que se espera en un campo de entrada? a)
+    data-type b) input-type <u>c) type</u> d) data</h3>
+
+
+  <h3>3-¿Cuál de los siguientes tipos de campo de entrada se utiliza para ingresar direcciones de correo electrónico? a)
+    text <u>b) email</u> c) mail d) input</h3>
+
+
+  <h3>4-¿Cuál es el elemento HTML que se utiliza para asociar un texto descriptivo con un campo de entrada en un
+    formulario? a) <description> b) <info> c) <placeholder> <u>d) <label></u></h3>
+
+
+  <h3>5-¿Cuál de las siguientes opciones es la etiqueta correcta para crear un botón de envío en un formulario? <u>a)
+      <input type="submit"></u> b) <button type="submit"> c) <btn> d) <submit>
+  </h3>
+
+
+  <h3>6-¿Cuál de los siguientes atributos se utiliza para hacer que un campo de entrada sea obligatorio en un
+    formulario? <u>a) required</u> b) mandatory c) validate d) mandatoryfield</h3>
+
+
+  <h3>7-¿Cuál de los siguientes elementos HTML se utiliza para crear una lista desplegable en un formulario? a) <list>
+      b) <dropdown> <u>c) <select></u> d) <input type="list"></h3>
+
+
+  <h3>8-¿Cuál de los siguientes tipos de campo de entrada se utiliza para ingresar un apellido? <u>a) text</u> b) email
+    c) mail d) input</h3>
+
+  <h3>9-¿Qué atributo se utiliza para definir un valor predeterminado en un campo de entrada de un formulario? <u>a)
+      value </u>b) default c) preset d) initial</h3>
+
+  <h3>10-¿Qué son los métodos / verbos de petición HTTP? Dar ejemplos. Bibliografía MDN</h3>
+  <p>Los metodos o vervos HTTP indican la accion que desea realizar un recurso determinado ,cada uno de ellos tiene
+    caracteristicas similares
+    Metodos HTTP:<br> GET:solo deven recuperar datos,solicita una reprecentacion de un recurso especifico.<br>HEAD:pide
+    una respuest identica a la deuna peticion GET.<BR>POST:replaza las reprecentaciones actuales del
+    recurso.<BR>DELETE:borra un recurso en especifico. <br>CONNECT:crea un tunel hacia el servidor identificado para el
+    recurso.<br>OPTIONS: se usa para escribir opciones para el recurso de destino.<br>TRACE:hace una prueva de mensaje a
+    lo largo de la ruta al recurso de destino.<br>PATCH:se usa para hacer cambios parciales a un recurso.
+  </p>
+
+  <h3>11-¿Qué son los códigos de estado de respuestas HTTP? Realizar una tabla con su clasificación. Bibliografía MDN
+  </h3>
+  <p> Los codigos de estado de respuestas HTTP son <br> 1)Respuestas informativas (100-199) <br>2)Respuetas
+    satifactorias (200-299)<br>3)Redirecciones(300-399) <br> 4)Errores de los clientes (400-499) <br> 5) y errores de
+    los servidores (500-599)
+  </p>
+
+  <h1>2-Aplicar formularios</h1>
+  <h3>Crear una página que contenga header - main - footer. La página tiene que ser sobre el registro de clientes para
+    una empresa.
+    Elegir una de las siguientes temáticas: autos, videojuegos, cosmética, indumentaria.
+
+    El formulario debe solicitar los siguientes datos: nombre y apellido* , correo electrónico*, fecha de nacimiento,
+    DNI*, teléfono, usuario de X, usuario de Instagram, ciudad, provincia. El formulario tendrá, además, que consultar
+    al usuario sobre sus preferencias relacionadas con la temática elegida, por ejemplo:
+    ¿qué deportes realiza? tenis - natación - basquet </h3>
+
+  <h1>Autos Toyota</h1>
+  <form action="/registro" method="post">
+    <fieldset>
+      <label for="nombre">nombre:</label>
+      <imput type="text" id="nombre" name="nombre" required> <!--tipo texto -->
+
+        <label for="apellido">apellido:</label>
+        <imput type="text" id="apellido" name="apellido" required> <!--tipo texto -->
+
+
+          <label for="correo electronico">correo electronico:</label>
+          <input type="text" id="correo electronico" name="correo electronico" required> <!-- tipo texto -->
+
+          <label for="fecha de nacimiento">fecha de nacimiento:</label>
+          <input type="text" id="correo electronico" name="correo electronico" required>
+
+          <label for="DNI">DNI:</label>
+          <input type="DNI" id="DNI" name="DNI" required> <!-- tipo número-->
+
+          <label for="Telefono">Telefono:</label>
+          <input type="Telefono" id="Telefono" name="Telefono" required> <!-- tipo número-->
+
+          <label for="Usuario de X">Usuario de X:</label>
+          <input type="Usuario de X" id="Usuario de X" name="usuario de X" required> <!--tipo texto-->
+
+          <label for="Usuario de Instagram">Usuario de Instagram:</label>
+          <input type="Usuario de Instagram" id="Usuario de Instagram" name="usuario de Instagram" required>
+          <!--tipo texto-->
+
+          <label for="Ciudad">Ciudad:</label>
+          <select id="Ciudad" name="Ciudad" required> <!-- selector de opciones -->
+
+            <option value="Mendoza ">Mendoza</option>
+
+            <option value="Godoy cruz">Godoy cruz</option>
+
+            <option value="Lanus">Lanus</option>
+
+            <option value="Mar del plata ">Mar del plata</option>
+
+            <option value="La plata">La plata </option>
+
+            <option value="Rosario">Rosario</option>
+
+            <option value="Salta">Salta</option>
+
+            <option value="Resistencia">Resistencia</option>
+
+            <option value="Posadas">Posadas</option>
+
+            <option value="Bahia blanca">Bahia blanca</option>
+
+            <option value="Quilmes">Quilmes</option>
+          </select>
+
+            <label for="Provincia">Provincia:</label>
+            <select id="Provincia" name="Provincia" required> <!-- selector de opciones -->
+
+              <option value="Buenos aires">Buenos aires</option>
+
+              <option value="Rio negro">Rio negro</option>
+
+              <option value="Neuquen">Neuquen</option>
+            </select>
+
+              <label for="Vehiculo">Vehiculo:</label>
+              <select id="vehiculo" name="Vehiculo" required> <!-- selector de opciones -->
+                <option value="Auto">Auto</option>
+                <option value="Auto">Camioneta</option>
+                <option value="Auto">Motocileta</option>
+              </select>
+
+                <label for="Modelo">Modelo:</label>
+                <select id="Modelo" name="Modelo" required> <!-- selector de opciones -->
+                  <option value="Yaris Hatchback">Yaris Hatchback</option>
+
+                  <option value="Yaris Sedán">Yaris Sedán</option>
+
+                  <option value="Corolla">Corolla</option>
+
+                  <option value="Hilux DX/SR">Hilux DX/SR</option>
+
+                  <option value="Hilux SRV/SRX">Hilux SRV/SRX</option>
+                </select>
+                  <label for="color">Color:</label>
+                  <select id="Color" name="Color" required> <!-- selector de opciones -->
+                    <option value="Blanco">Blanco</option>
+
+                    <option value="Negro">Negro</option>
+
+                    <option value="Azul">Azul</option>
+
+                    <option value="Rojo">Rojo</option>
+
+                    <option value="Gris">Gris</option>
+                  </select>
+                  <input type="submit" value="Enviar">
+
+    </fieldset>
+  </form>
+</body>
+
+</html>
